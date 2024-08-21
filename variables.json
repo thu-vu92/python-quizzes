@@ -1,0 +1,62 @@
+[
+	{
+     #Question 1
+        "question": "Which of the following is a valid variable name in Python?",
+        "type": "multiple_choice",
+        "answers": [
+            {
+                "code": "2myvar",
+                "correct": False,
+                "feedback": "Variable names cannot start with a number.",
+            },
+            {
+                "code": "my-var",
+                "correct": False,
+                "feedback": "Variable names cannot contain a hyphen.",
+            },
+            {
+                "code": "_myvar",
+                "correct": True,
+                "feedback": "Variable names can start with an underscore.",
+            },
+            {
+                "code": "my var",
+                "correct": False,
+                "feedback": "Variable names cannot contain a space.",
+            },
+        ],
+    },
+
+    {
+        # Quesion 2
+        "question": "Determine the output of the following Python code:",
+        "code": "x = 5\n\
+y = x\n\
+x = 7\n\
+print(7)",
+        "type": "multiple_choice",
+        "answers": [
+            {"code": "x = 7, y = 5", "correct": True, "feedback": "Correct."},
+            {"code": "x = 5, y = 7", "correct": False, "feedback": "Incorrect."},
+            {"code": "x = 7, y = 7", "correct": False, "feedback": "Incorrect."}
+        ],
+    },
+
+    {
+        # Question 3
+        "question": "What happens if a local variable exists with the same name as a global variable? ",
+        "type": "multiple_choice",
+        "answers": [
+            {"answer": "The global variable takes precedence", 
+                        "correct": False, 
+                        "feedback": "Incorrect."},
+            {"answer": "The local variable takes precedence", 
+             "correct": True, 
+             "feedback": "Correct: When a local variable has the same name as a global variable, the local variable takes precedence within its scope."},
+            {"answer": "It results in a compilation error", 
+             "correct": False, 
+             "feedback": "Incorrect."},
+             {"answer": "Both variables can be accessed simultaneously", 
+             "correct": False, 
+             "feedback": "Incorrect."}
+]
